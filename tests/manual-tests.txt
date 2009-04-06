@@ -1,0 +1,171 @@
+■準備
+
+ 1. ImportExportToolsをインストールする
+    https://nic-nac-project.de/~kaosmos/mboximport-en.html
+
+
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■テストケース：受信メールのヘッダの修復
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+
+ 1. [ツール]-[mbox/eml形式で読み込み・書き出し]-[emlファイルを
+    読み込む] でmail.emlをインポートする。
+ 2. メールを選択する。
+
+●確認項目
+
+ ◆「差出人」欄の内容が以下の3件である。
+    ----------------------------------------------
+      "SHIMODA, Hiroshi" <address+1@example.com>,
+      "SHIMODA, Hiroshi" <address+2@example.com>,
+      SHIMODA Hiroshi (foobar) <address+3@example.com>
+    ----------------------------------------------
+ ◆「宛先」欄の内容が以下の5件である。
+    ----------------------------------------------
+      "SHIMODA, Hiroshi" <address+4@example.com>,
+      "SHIMODA, Hiroshi" <address+5@example.com>,
+      SHIMODA Hiroshi (foobar) <address+6@example.com>,
+      SHIMODA Hiroshi (foobar) <address+7@example.com>,
+      下田 洋志 <address+8@example.com>
+    ----------------------------------------------
+ ◆「Cc」欄の内容が以下の5件である。
+    ----------------------------------------------
+      下田 洋志 <address+9@example.com>,
+      足永 拓郎 <"address+10@example.com">,
+      池添 浩之 <"address+11"@example.com>,
+      須藤 功平 <address+12@example.com>,
+      <Minami Shin-ichiro> <address+13@example.com>
+    ----------------------------------------------
+
+
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■テストケース：受信メールのヘッダの修復と差出人への返信
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+
+ 1. [ツール]-[mbox/eml形式で読み込み・書き出し]-[emlファイルを
+    読み込む] でmail.emlをインポートする。
+ 2. メールを選択する。
+ 3. [メッセージ]-[返信]を選択する。
+
+●確認項目
+
+ ◆宛先欄の内容が以下の3件である。
+    ----------------------------------------------
+     宛先： "SHIMODA, Hiroshi" <address+1@example.com>
+     宛先： "SHIMODA, Hiroshi" <address+2@example.com>
+     宛先： SHIMODA Hiroshi (foobar) <address+3@example.com>
+    ----------------------------------------------
+
+
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■テストケース：受信メールのヘッダの修復と全員への返信
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+
+ 1. [ツール]-[mbox/eml形式で読み込み・書き出し]-[emlファイルを
+    読み込む] でmail.emlをインポートする。
+ 2. メールを選択する。
+ 3. [メッセージ]-[全員に返信]を選択する。
+
+●確認項目
+
+ ◆宛先欄の内容が以下の13件である。
+    ----------------------------------------------
+     宛先： "SHIMODA, Hiroshi" <address+1@example.com>
+     宛先： "SHIMODA, Hiroshi" <address+2@example.com>
+     宛先： SHIMODA Hiroshi (foobar) <address+3@example.com>
+     宛先： "SHIMODA, Hiroshi" <address+4@example.com>
+     宛先： "SHIMODA, Hiroshi" <address+5@example.com>
+     宛先： SHIMODA Hiroshi (foobar) <address+6@example.com>
+     宛先： SHIMODA Hiroshi (foobar) <address+7@example.com>
+     宛先： 下田 洋志 <address+8@example.com>
+     Cc： 下田 洋志 <address+9@example.com>
+     Cc： 足永 拓郎 <"address+10@example.com">
+     Cc： 池添 浩之 <"address+11"@example.com>
+     Cc： 須藤 功平 <address+12@example.com>
+     Cc： <Minami Shin-ichiro> <address+13@example.com>
+    ----------------------------------------------
+
+
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■テストケース：添付されたメールのヘッダの修復
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+
+ 1. [ツール]-[mbox/eml形式で読み込み・書き出し]-[emlファイルを
+    読み込む] でattached.emlをインポートする。
+ 2. メールを選択する。
+ 3. 添付ファイル [mail.eml] をダブルクリックする。
+
+●確認項目
+
+ ◆「差出人」欄の内容が以下の3件である。
+    ----------------------------------------------
+      "SHIMODA, Hiroshi" <address+1@example.com>,
+      "SHIMODA, Hiroshi" <address+2@example.com>,
+      SHIMODA Hiroshi (foobar) <address+3@example.com>
+    ----------------------------------------------
+ ◆「宛先」欄の内容が以下の5件である。
+    ----------------------------------------------
+      "SHIMODA, Hiroshi" <address+4@example.com>,
+      "SHIMODA, Hiroshi" <address+5@example.com>,
+      SHIMODA Hiroshi (foobar) <address+6@example.com>,
+      SHIMODA Hiroshi (foobar) <address+7@example.com>,
+      下田 洋志 <address+8@example.com>
+    ----------------------------------------------
+ ◆「Cc」欄の内容が以下の5件である。
+    ----------------------------------------------
+      下田 洋志 <address+9@example.com>,
+      足永 拓郎 <"address+10@example.com">,
+      池添 浩之 <"address+11"@example.com>,
+      須藤 功平 <address+12@example.com>,
+      <Minami Shin-ichiro> <address+13@example.com>
+    ----------------------------------------------
+
+
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■テストケース：添付されたメールのヘッダの修復と差出人への返信
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+
+ 1. [ツール]-[mbox/eml形式で読み込み・書き出し]-[emlファイルを
+    読み込む] でattached.emlをインポートする。
+ 2. メールを選択する。
+ 3. 添付ファイル [mail.eml] をダブルクリックする。
+ 4. [メッセージ]-[返信]を選択する。
+
+●確認項目
+
+ ◆宛先欄の内容が以下の3件である。
+    ----------------------------------------------
+     宛先： "SHIMODA, Hiroshi" <address+1@example.com>
+     宛先： "SHIMODA, Hiroshi" <address+2@example.com>
+     宛先： SHIMODA Hiroshi (foobar) <address+3@example.com>
+    ----------------------------------------------
+
+
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■テストケース：添付されたメールのヘッダの修復と全員への返信
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+
+ 1. [ツール]-[mbox/eml形式で読み込み・書き出し]-[emlファイルを
+    読み込む] でattached.emlをインポートする。
+ 2. メールを選択する。
+ 3. 添付ファイル [mail.eml] をダブルクリックする。
+ 4. [メッセージ]-[全員に返信]を選択する。
+
+●確認項目
+
+ ◆宛先欄の内容が以下の13件である。
+    ----------------------------------------------
+     宛先： "SHIMODA, Hiroshi" <address+1@example.com>
+     宛先： "SHIMODA, Hiroshi" <address+2@example.com>
+     宛先： SHIMODA Hiroshi (foobar) <address+3@example.com>
+     宛先： "SHIMODA, Hiroshi" <address+4@example.com>
+     宛先： "SHIMODA, Hiroshi" <address+5@example.com>
+     宛先： SHIMODA Hiroshi (foobar) <address+6@example.com>
+     宛先： SHIMODA Hiroshi (foobar) <address+7@example.com>
+     宛先： 下田 洋志 <address+8@example.com>
+     Cc： 下田 洋志 <address+9@example.com>
+     Cc： 足永 拓郎 <"address+10@example.com">
+     Cc： 池添 浩之 <"address+11"@example.com>
+     Cc： 須藤 功平 <address+12@example.com>
+     Cc： <Minami Shin-ichiro> <address+13@example.com>
+    ----------------------------------------------

@@ -1,0 +1,8 @@
+content	normalizequotes	jar:chrome/normalizequotes.jar!/content/normalizequotes/
+
+overlay	chrome://messenger/content/messenger.xul	chrome://normalizequotes/content/globalOverlay.xul
+overlay	chrome://messenger/content/messageWindow.xul	chrome://normalizequotes/content/globalOverlay.xul
+overlay	chrome://messenger/content/messengercompose/messengercompose.xul	chrome://normalizequotes/content/globalOverlay.xul
+
+locale	normalizequotes	en-US	jar:chrome/normalizequotes.jar!/locale/en-US/normalizequotes/
+locale	normalizequotes	ja	jar:chrome/normalizequotes.jar!/locale/ja/normalizequotes/

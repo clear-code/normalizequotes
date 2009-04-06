@@ -1,0 +1,112 @@
+X-Mozilla-Status: 0001
+X-Mozilla-Status2: 00800000
+X-Mozilla-Keys:                                                                                 
+Message-ID: <4811B888.4070402-attached@clear-code.com>
+Date: Fri, 25 Apr 2008 19:55:04 +0900
+User-Agent: Thunderbird 2.0.0.12 (Windows/20080213)
+MIME-Version: 1.0
+From: =?UTF-8?B?U0hJTU9EQSwgSGlyb3NoaQ==?= <address+1@example.com>,
+	=?UTF-8?B?U0hJTU9EQSw=?=
+	=?UTF-8?B?SGlyb3NoaQ==?= <address+2@example.com>,
+	=?UTF-8?B?U0hJTU9EQSBIaXJvc2hpIChmb29iYXLvvIk=?= <address+3@example.com>
+To: =?UTF-8?B?U0hJTU9EQSwgSGlyb3NoaQ==?= <address+4@example.com>,
+	=?UTF-8?B?U0hJTU9EQSw=?=
+	=?UTF-8?B?SGlyb3NoaQ==?= <address+5@example.com>,
+	=?UTF-8?B?U0hJTU9EQSBIaXJvc2hpIChmb29iYXLvvIk=?=
+	<address+6@example.com>, =?UTF-8?B?U0hJTU9EQQ==?=
+	=?UTF-8?B?SGlyb3NoaSAoZm9vYmFy77yJ?= <address+7@example.com>,
+	=?UTF-8?B?5LiL55SwIOa0i+W/lw==?= <address+8@example.com>
+cc: =?UTF-8?B?5LiL55Sw?=
+	=?UTF-8?B?5rSL5b+X?= <address+9@example.com>,
+	=?UTF-8?B?6Laz5rC4IOaLk+mDjg==?= <"address+10@example.com">,
+	=?UTF-8?B?5rGg5re7IOa1qeS5iw==?= <"address+11"@example.com>,
+	=?UTF-8?B?6aCI6JekIOWKnw==?==?UTF-8?B?5bmz?= <address+12@example.com>,
+	=?UTF-8?B?PE1pbmFtaSBTaGluLWljaGlybz4=?= <address+13@example.com>
+Subject: TEST MAIL, WITH ATTACHMENTS
+References: <47CE253A.4050208@kyoseimec.co.jp> <00f701c87e8f$b0ec2bf0$5101550a@NWUXICLOSE>
+In-Reply-To: <00f701c87e8f$b0ec2bf0$5101550a@NWUXICLOSE>
+Content-Type: multipart/mixed;
+ boundary="------------040906030607030009020504"
+
+This is a multi-part message in MIME format.
+--------------040906030607030009020504
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 7bit
+
+body
+
+
+
+
+--------------040906030607030009020504
+Content-Type: message/rfc822;
+ name="mail.eml"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline;
+ filename="mail.eml"
+
+Return-Path: <aaaaa@bbbbb.co.jp>
+Received: from beige.intra.test.co.jp (beige.intra.test.co.jp [150.60.1.120])
+    by bronze.intra.test.co.jp (Scalix SMTP Relay 11.3.0.11339)
+    via ESMTP; Wed, 05 Mar 2008 16:08:49 +0900 (JST)
+Received: from bordeaux.test.co.jp (unknown [150.60.7.3])
+	by beige.intra.test.co.jp (Postfix) with ESMTP id AA9B5380018;
+	Wed,  5 Mar 2008 16:08:49 +0900 (JST)
+Received: from bordeaux.test.co.jp (localhost [127.0.0.1])
+	by bordeaux.test.co.jp (Postfix) with ESMTP id 91E7D85C13F;
+	Wed,  5 Mar 2008 16:08:49 +0900 (JST)
+Received: from 150.60.7.4 (150.60.7.4)
+ by bordeaux.test.co.jp (XXXXXX);
+ Wed, 5 Mar 2008 16:08:49 +0900 (JST)
+Received: from ([XXX.XXX.XXX.XXX])
+	by black.test.co.jp with ESMTP  id 4440415.809986;
+	Wed, 05 Mar 2008 16:08:16 +0900
+Received: from XXX.XXX.XXX.XXX (unknown [XXX.XXX.XXX.XXX])
+	by XXX.XXX.XXX.XXX (Postfix) with SMTP
+	id DA1CE344157; Wed,  5 Mar 2008 16:03:19 +0900 (JST)
+Received: from XXX.XXX.XXX.XXX by XXX.XXX.XXX.XXX (LanScope Guard2 MA); Wed, 05 Mar 2008 16:11:52 +0900
+Received: from XXX.XXX.XXX.XXX ([XXX.XXX.XXX.XXX])
+          by XXX.XXX.XXX.XXX (Post.Office MTA v3.5.3J
+          release 223-101-J ID# 0-0U10L2S100V35) with SMTP id JP;
+          Wed, 5 Mar 2008 16:09:27 +0900
+Received: from XXX.XXX.XXX.XXX ([XXX.XXX.XXX.XXX]) by XXX.XXX.XXX.XXX (Lotus SMTP MTA v4.6.7  (934.1 12-30-1999)) with SMTP id 49257403.00275CA3; Wed, 5 Mar 2008 16:09:57 +0900
+Date: Wed, 5 Mar 2008 15:08:16 +0800
+From: =?UTF-8?B?U0hJTU9EQSwgSGlyb3NoaQ==?= <address+1@example.com>,
+	=?UTF-8?B?U0hJTU9EQSw=?=
+	=?UTF-8?B?SGlyb3NoaQ==?= <address+2@example.com>,
+	=?UTF-8?B?U0hJTU9EQSBIaXJvc2hpIChmb29iYXLvvIk=?= <address+3@example.com>
+To: =?UTF-8?B?U0hJTU9EQSwgSGlyb3NoaQ==?= <address+4@example.com>,
+	=?UTF-8?B?U0hJTU9EQSw=?=
+	=?UTF-8?B?SGlyb3NoaQ==?= <address+5@example.com>,
+	=?UTF-8?B?U0hJTU9EQSBIaXJvc2hpIChmb29iYXLvvIk=?=
+	<address+6@example.com>, =?UTF-8?B?U0hJTU9EQQ==?=
+	=?UTF-8?B?SGlyb3NoaSAoZm9vYmFy77yJ?= <address+7@example.com>,
+	=?UTF-8?B?5LiL55SwIOa0i+W/lw==?= <address+8@example.com>
+cc: =?UTF-8?B?5LiL55Sw?=
+	=?UTF-8?B?5rSL5b+X?= <address+9@example.com>,
+	=?UTF-8?B?6Laz5rC4IOaLk+mDjg==?= <"address+10@example.com">,
+	=?UTF-8?B?5rGg5re7IOa1qeS5iw==?= <"address+11"@example.com>,
+	=?UTF-8?B?6aCI6JekIOWKnw==?==?UTF-8?B?5bmz?= <address+12@example.com>,
+	=?UTF-8?B?PE1pbmFtaSBTaGluLWljaGlybz4=?= <address+13@example.com>
+Message-ID: <00f701c87e8f$b0ec2bf0$5101550a@NWUXICLOSE>
+References: <47CE253A.4050208@kyoseimec.co.jp>
+Subject: TEST MAIL
+X-MSMail-Priority: Normal
+X-Priority: 3
+X-Account-Key: account2
+X-Mozilla-Keys: 
+MIME-Version: 1.0
+Content-Type: text/plain;
+	charset="UTF-8";
+	format="flowed";
+	reply-type="original"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+body
+
+
+
+
+--------------040906030607030009020504--
+
